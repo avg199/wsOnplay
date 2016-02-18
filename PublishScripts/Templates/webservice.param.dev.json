@@ -1,0 +1,32 @@
+{
+  "siteName": {
+    "value": "serviceonplay"
+  },
+  "hostingPlanName": {
+    "value": "servicioonplay"
+  },
+  "siteLocation": {
+    "value": "North Europe"
+  },
+  "sku": {
+    "value": "Free"
+  },
+  "workerSize": {
+    "value": "0"
+  },
+  "serverName": {
+    "value": "bdonplay"
+  },
+  "serverLocation": {
+    "value": "North Europe"
+  },
+  "administratorLogin": {
+    "value": "onplay"
+  },
+  "administratorLoginPassword": {
+    "value": "Catalunya9"
+  },
+  "databaseName": {
+    "value": "serviceonplay_db"
+  }
+}
