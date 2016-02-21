@@ -3,10 +3,12 @@ using System.Data.SqlClient;
 
 namespace webservice.Areas.Api.Models
 {
-    class SongManager{
+    class SongManager
+    {
         private static string cadenaConexio = @"Data Source=bdonplay.database.windows.net;Initial Catalog=DBonplay;Integrated Security=True";
-        
-        public song obtenirSong (int id){
+
+        public song obtenirSong(int id)
+        {
 
             song sng = null;
 
@@ -35,15 +37,16 @@ namespace webservice.Areas.Api.Models
 
             return sng;
         }
-        
-        public List<song> obtenirSongs(){
+
+        public List<song> obtenirSongs()
+        {
 
             List<song> llista = new List<song>();
             SqlConnection con = new SqlConnection(cadenaConexio);
             con.Open();
 
             string sql = "SELECT IdSong, Nom, Duracio FROM Songs";
-            SqlCommand cmd = new SqlCommand(sql,con);
+            SqlCommand cmd = new SqlCommand(sql, con);
 
             SqlDataReader reader = cmd.ExecuteReader(System.Data.CommandBehavior.CloseConnection);
 
@@ -63,9 +66,5 @@ namespace webservice.Areas.Api.Models
 
             return llista;
         }
-    }
-
-
-    }
     }
 }
