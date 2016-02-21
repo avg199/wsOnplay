@@ -206,6 +206,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\Api\ApiAreaRegistration.cs" />
+    <Compile Include="Areas\Api\Controllers\SongsController.cs" />
     <Compile Include="Areas\Api\Models\song.cs" />
     <Compile Include="Areas\Api\Models\SongManager.cs" />
     <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
@@ -314,8 +315,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Api\Controllers\" />
     <Folder Include="Areas\Api\Views\Shared\" />
+    <Folder Include="Areas\Api\Views\Songs\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
