@@ -5,9 +5,10 @@ namespace webservice.Areas.Api.Models
 {
     class SongManager
     {
-        private static string cadenaConexio = @"Data Source=bdonplay.database.windows.net;Initial Catalog=DBonplay;Integrated Security=True";
-
-        public song obtenirSong(int id)
+        private static string cadenaConexio = @"Data Server=tcp:bdonplay.database.windows.net,1433;Database=serviceonplay_db;User ID = onplay@bdonplay;Password={your_password_here}; Encrypt=True;TrustServerCertificate=False;Connection Timeout = 30";
+            //@"Data Source=bdonplay.database.windows.net;Initial Catalog=DBonplay;Integrated Security=True";
+       
+    public song obtenirSong(int id)
         {
 
             song sng = null;
